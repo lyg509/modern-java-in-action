@@ -41,7 +41,7 @@ List<Apple> greenApples = filterApples(inventory, new AppleGreenColorPredicate()
 List<Apple> greenApples
 	 = filterApples(inventory, (Apple apple) -> GREEN.equals(apple.getColor()));
 ```
-<img src="../img/MotionParameterization.png" alt="MotionParameterization" width="50%" />
+<img src="image/MotionParameterization.png" alt="MotionParameterization" width="50%" />
 
 자바 API의 많은 메서드는 정렬, 스레드, GUI 처리 등을 포함한 다양한 동작으로 파라미터화 할 수 있다.
 
@@ -51,6 +51,7 @@ public interface Comparator<T> {
 	int compare(T o1, T o2)l
 }
 ```
+
 ```java
 // anonymous class
 inventory.sort(new Comparator<Apple>() {
